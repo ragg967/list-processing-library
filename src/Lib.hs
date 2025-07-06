@@ -1,6 +1,8 @@
 module Lib
-    ( someFunc
-    ) where
+  ( myMap,
+  )
+where
 
-someFunc :: IO ()
-someFunc = putStrLn "someFunc"
+myMap :: (a -> b) -> [a] -> [b]
+myMap _ [] = []
+myMap f (x : xs) = f x : myMap f xs
