@@ -8,4 +8,5 @@ main = do
   printf "\n"
   print (myMap (+ 1) [1, 2, 3])
   print (myFilter (> 1) [1, 2, 3])
+  print (myFold (+) 0 [1, 2, 3])
   printf "\n"
